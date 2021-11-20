@@ -63,7 +63,7 @@ function stopWatch() {
 
 function timer() {
       if (status === true) {
-            interval = setInterval(stopWatch, 1);
+            interval = setInterval(stopWatch, 1000);
             startStopBtn.innerHTML = "Stop";
             startStopBtn.classList.add("redColorClass");
 
