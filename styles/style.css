@@ -6,8 +6,8 @@
       box-sizing: border-box;
       text-decoration: none;
       list-style-type: none;
-      font-family: "lato";
       text-decoration: ltr;
+      font-family: "lato";
 }
 html,
 body,
@@ -23,10 +23,13 @@ body,
       text-align: center;
       flex-direction: column;
 }
+.row {
+      margin-bottom: 200px !important;
+}
 .row,
 h1,
 p {
-      margin: 25px 0;
+      margin: 30px 0;
 }
 .row p {
       font-size: 35px;
@@ -36,7 +39,6 @@ p {
 }
 .buttons button {
       background-color: transparent;
-      color: #fff;
       outline: 3px #fff solid;
       border: none;
       border-radius: 4px;
@@ -46,13 +48,21 @@ p {
       cursor: pointer;
       transition: 0.25s ease-in-out;
 }
-#startStopBtn {
-      outline-color: #008d18;
+.buttons #startStopBtn {
       color: #008d18;
+      outline-color: #008d18;
+}
+#startStopBtn.redColorClass {
+      color: #ff0000;
+      outline-color: #ff0000;
+}
+#startStopBtn.greenColorClass {
+      color: #008d18;
+      outline-color: #008d18;
 }
 #resetBtn {
-      outline-color: #000;
       color: #000;
+      outline-color: #000;
 }
 #resetBtn:hover,
 #startStopBtn:hover {
